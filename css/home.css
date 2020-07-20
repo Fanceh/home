@@ -385,10 +385,10 @@ hr{
     z-index: -3;
     transition: .5s all ease-in-out;
 }
-
+/* 
 .box:hover .content>h3{
     font-size: 3.1rem;
-}
+} */
 
 .box:hover::before{
     transform: skew(2deg,2deg);
@@ -420,7 +420,6 @@ hr{
     padding: 8rem 2rem;
     z-index: -2;
     height: 350px;
-    width: 300px;
 }
 
 .box:hover .content h2{
