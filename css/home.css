@@ -387,14 +387,6 @@ hr{
     transition: .5s all ease-in-out;
 }
 
-/* .box:hover{
-    transform: scale(1.1);
-} */
-
-.box:hover .content>ul{
-    font-size: 2.5rem;
-}
-
 .box:hover::before{
     transform: skew(2deg,2deg);
 }
