@@ -293,28 +293,6 @@ hr{
     cursor: default;
     z-index: -3;
 }
- 
-/* .my-story::before{
-    position: absolute;
-    top: 0;
-    bottom: 30rem;
-    width: 100%;
-    z-index: -4;
-    content: '';
-    background: url(../images/wave-bg-1.svg) center no-repeat;
-    background-size: cover;
-}
-
-.my-story::after{
-    position: absolute;
-    top: 0;
-    bottom: -72.3rem;
-    width: 100%;
-    z-index: -4;
-    content: '';
-    background-size: cover;
-    background: url(../images/wave-bg-2.svg) center no-repeat;
-} */
 
 .title-common-bg{
     font-family: 'Orbitron', sans-serif;
@@ -345,6 +323,9 @@ hr{
     outline: 20px solid #028dff8f;
     transition: all 1s ease;
     background: linear-gradient(21deg, rgba(20,24,47,1) 50%, rgba(7,11,34,1) 50%, rgba(7,11,34,1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .story-details-sub::before{
@@ -363,6 +344,13 @@ hr{
     bottom: 0;
     right: 0px;
     outline: 5px solid #fafafa;
+}
+
+.story-details-sub>img{
+    height: 150px;
+    width: auto;
+    margin: 1rem;
+    box-shadow: 0 0 50px #fafafa;
 }
 
 /*My Services*/
@@ -398,6 +386,10 @@ hr{
     transition: .5s all ease-in-out;
 }
 
+.box:hover .content>h3{
+    font-size: 3.1rem;
+}
+
 .box:hover::before{
     transform: skew(2deg,2deg);
 }
@@ -428,6 +420,7 @@ hr{
     padding: 8rem 2rem;
     z-index: -2;
     height: 350px;
+    width: 300px;
 }
 
 .box:hover .content h2{
@@ -450,6 +443,7 @@ hr{
     color: #fafafa;
     text-transform: uppercase;
     margin-bottom: 5rem;
+    transition: .4s all ease-in-out;
 }
 
 .content ul{
@@ -538,7 +532,7 @@ hr{
 .client-review-actual{
     text-align: center;
     padding: 1rem;
-    font-size: 1.4rem;
+    font-size: 1rem;
     color: #fafafa;
     opacity: 0;
     transform: translate(0%,100px);
@@ -602,5 +596,7 @@ hr{
         font-size: 2rem;
         margin-top: 12rem;
         width: 80%;
+        display: flex;
+        flex-direction: column;
     }
 }
